@@ -8,7 +8,6 @@ class Counter extends React.Component {
     static getInitialProps ({ store, isServer }) {
         store.dispatch(serverRenderClock(isServer))
         store.dispatch(addCount())
-        
         return { isServer }
     }
     
@@ -22,7 +21,7 @@ class Counter extends React.Component {
     
     render () {
         return (
-            <Page title='Index Page' linkTo='/other' />
+            <Page title='Other Page' linkTo='/' />
         )
     }
 }
