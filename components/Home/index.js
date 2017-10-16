@@ -1,9 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import Header from './Header'
 import Nav from './Nav'
 import Special from './Special'
-import { bindActionCreators } from 'redux'
 import { getNav } from '/redux/store'
 
 class Home extends React.Component {
@@ -11,7 +11,10 @@ class Home extends React.Component {
         super(props)
     }
     componentWillMount() {
-        this.props.getNav()
+        const { navMain=[] } = this.props
+        if (navMain.length == 0) {
+            this.props.getNav()
+        }
     }
     render() {
         let bgClass = { background: '#00bb9c' }
