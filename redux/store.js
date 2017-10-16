@@ -7,7 +7,7 @@ const initialState = {
     navMain: []
 }
 
-// REDUCERS
+// reducer
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
         case "RECEIVE_NAV":
@@ -19,11 +19,7 @@ export const reducer = (state = initialState, action) => {
     }
 }
 
-// ACTIONS
-//export const serverRenderClock = (isServer) => dispatch => {
-//    return dispatch({ type: actionTypes.TICK, light: !isServer, ts: Date.now() })
-//}
-
+// actions
 const receiveNav = (response) => ({
     type: 'RECEIVE_NAV',
     navMain: response.data
@@ -36,7 +32,6 @@ export const getNav = () => async (dispatch, getState) => {
         console.log('error: ', error)
     }
 }
-
 
 export const initStore = (initialState = initialState) => {
     return createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
