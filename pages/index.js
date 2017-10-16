@@ -1,11 +1,10 @@
 import React from 'react'
-import { bindActionCreators } from 'redux'
 import { initStore } from '../redux/store'
 import withRedux from 'next-redux-wrapper'
 import Layout from '../components/Layout'
 import Home from '../components/Home'
 
-class Counter extends React.Component {
+class App extends React.Component {
     componentDidMount () {
         //this.timer = this.props.startClock()
     }
@@ -30,4 +29,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default withRedux(initStore, null, mapDispatchToProps)(Counter)
+export default withRedux(initStore, null, mapDispatchToProps)(App)
