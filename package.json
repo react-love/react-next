@@ -4,9 +4,9 @@
   "description": "next",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
     "axios": "^0.16.2",
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-wrap-in-js": "^1.1.1",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
     "file-loader": "^1.1.5",
     "glob": "^7.1.2",
     "next": "latest",
