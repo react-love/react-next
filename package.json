@@ -1,0 +1,46 @@
+{
+  "name": "react-next",
+  "version": "1.0.0",
+  "description": "next",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyy1115/react-next.git"
+  },
+  "keywords": [
+    "react",
+    "next"
+  ],
+  "author": "hyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyy1115/react-next/issues"
+  },
+  "homepage": "https://github.com/hyy1115/react-next#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "glob": "^7.1.2",
+    "next": "latest",
+    "normalize.css": "^7.0.0",
+    "path": "^0.12.7",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.8",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "sass-loader": "^6.0.6"
+  },
+  "devDependencies": {
+    "babel-plugin-css-modules-transform": "^1.2.7",
+    "node-sass": "^4.5.3",
+    "postcss": "^6.0.13",
+    "postcss-cssnext": "^3.0.2"
+  }
+}
