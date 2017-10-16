@@ -45,6 +45,22 @@ class Search extends React.Component {
                         }
                     </p>
                 </div>
+                <style jsx>{`
+                .style_div_p {
+                      padding: 0.833rem 1.25rem;
+                }
+                 .search-hot-title {
+                      padding: 0.833rem 1.25rem 0 1.25rem;
+                      font-size: 1.2rem;
+                      i {
+                        color: #646464;
+                      }
+                      span {
+                        margin-left: 0.5rem;
+                        color: #646464;
+                      }
+                    }
+                `}</style>
             </div>
         )
     }

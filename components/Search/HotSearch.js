@@ -8,7 +8,16 @@ const HotSearch = (props) => {
            style={{color: currentHot === hotText ? '#398cee' : ''}}
         >
             {hotText}
-            {hotSearchStyle()}
+            <style jsx>{`
+            .style_span {
+              display: inline-block;
+              background: #f4f4f4;
+              padding: 0.41667rem 0.833rem;
+              margin-right: 1rem;
+              margin-bottom: 0.833rem;
+              color: #444;
+              font-size: 1rem;
+            }`}</style>
         </a>
     )
 }
@@ -18,15 +27,3 @@ HotSearch.propTypes = {
     currentHot: PropTypes.string
 }
 export default HotSearch
-
-const hotSearchStyle = () =>
-    <style jsx>{`
-    .style_span {
-      display: inline-block;
-      background: #f4f4f4;
-      padding: 0.41667rem 0.833rem;
-      margin-right: 1rem;
-      margin-bottom: 0.833rem;
-      color: #444;
-      font-size: 1rem;
-    }`}</style>

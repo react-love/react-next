@@ -8,7 +8,7 @@ const Header = (props) => {
         const { currentHot } = props
         return (
             <div className="style_body">
-                <head><style dangerouslySetInnerHTML={{__html: headerStyle}}></style></head>
+                <Head><style dangerouslySetInnerHTML={{__html: headerStyle}}></style></Head>
                 <div className="style_main">
                     <Link href="/">
                         <a className={`style_a`}><img src={`/static/search/back_search.png`} className="style_a_img" /></a>
@@ -24,7 +24,7 @@ const Header = (props) => {
                                }}
                         />
                     </div>
-                    <Link to="/search"><a className={`style_right_a`}>搜索</a></Link>
+                    <Link href="/search"><a className={`style_right_a`}>搜索</a></Link>
                 </div>
             </div>
         )

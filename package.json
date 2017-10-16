@@ -42,7 +42,10 @@
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "styled-jsx": "^2.1.1",
+    "styled-jsx-plugin-postcss": "^0.1.0",
+    "styled-jsx-plugin-sass": "^0.1.0"
   },
   "devDependencies": {
     "babel-plugin-css-modules-transform": "^1.2.7",
