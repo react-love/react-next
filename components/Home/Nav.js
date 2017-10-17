@@ -18,8 +18,8 @@ const navImage = {
 const Nav = (props) => {
     const { title, img, index, handleClick } = props
     return [
-        <Head><style dangerouslySetInnerHTML={{__html: navStyle}}></style></Head>,
-        <li className="style_li" onClick={handleClick}>
+        <Head key={`NavHead`}><style dangerouslySetInnerHTML={{__html: navStyle}}></style></Head>,
+        <li className="style_li" onClick={handleClick} key={`NavLi`}>
             <img src={navImage[index+1]} className="style_img" />
             <span className="style_span">{title}</span>
         </li>
