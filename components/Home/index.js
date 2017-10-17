@@ -22,7 +22,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Header
-                    title="react-redux架构"
+                    title="react-next服务端渲染"
                     linkTo="/search"
                     bgColor={bgClass}
                     imgUrl={`/static/home/search.svg`}
