@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production pm2 start server.js",
+    "stop": "pm2 stop server.js"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "next-routes": "^1.1.0",
     "normalize.css": "^7.0.0",
     "path": "^0.12.7",
+    "pm2": "^2.7.1",
     "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^2.0.8",
     "raw-loader": "^0.5.1",
