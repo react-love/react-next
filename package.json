@@ -40,8 +40,6 @@
     "path": "^0.12.7",
     "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^2.0.8",
-    "preact": "^8.2.5",
-    "preact-compat": "^3.17.0",
     "raw-loader": "^0.5.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
