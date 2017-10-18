@@ -19,10 +19,6 @@
   ],
   "author": "hyy",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hyy1115/react-next/issues"
-  },
-  "homepage": "https://github.com/hyy1115/react-next#readme",
   "dependencies": {
     "autoprefixer": "^7.1.5",
     "axios": "^0.16.2",
