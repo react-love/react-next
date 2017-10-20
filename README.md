@@ -40,4 +40,8 @@ npm run build //先打包
 npm start //最后运行，你也可以增加pm2的配置
 ```
 
-##### 后续会发布每个功能的实现教程、以及介绍和客户端渲染的区别。
+### 教程
+
+前往：[本项目使用教程文档][1]
+
+[1] https://github.com/hyy1115/react-next/blob/master/doc/%E6%95%99%E7%A8%8B.md

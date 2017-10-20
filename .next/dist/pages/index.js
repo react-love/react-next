@@ -44,6 +44,9 @@ var _Home2 = _interopRequireDefault(_Home);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var _jsxFileName = '/Users/yongyuehuang/WebstormProjects/react-next/pages/index.js?entry';
+
+
 var App = function (_React$Component) {
     (0, _inherits3.default)(App, _React$Component);
 
@@ -66,7 +69,16 @@ var App = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            return _react2.default.createElement(_Layout2.default, { title: '\u56FE\u4E66\u5546\u57CE' }, _react2.default.createElement(_Home2.default, null));
+            return _react2.default.createElement(_Layout2.default, { title: '\u56FE\u4E66\u5546\u57CE', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 18
+                }
+            }, _react2.default.createElement(_Home2.default, {
+                __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 19
+                }
+            }));
         }
     }]);
 
@@ -81,3 +93,4 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 exports.default = (0, _nextReduxWrapper2.default)(_store.initStore, null, mapDispatchToProps)(App);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiaW5pdFN0b3JlIiwid2l0aFJlZHV4IiwiTGF5b3V0IiwiSG9tZSIsIkFwcCIsIkNvbXBvbmVudCIsIm1hcERpc3BhdGNoVG9Qcm9wcyIsImRpc3BhdGNoIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87Ozs7QUFDUCxBQUFTLEFBQWlCOztBQUMxQixBQUFPOzs7O0FBQ1AsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBVTs7Ozs7Ozs7O0ksQUFFWDs7Ozs7Ozs7Ozs7NENBQ21CLEFBQ2pCO0FBQ0g7Ozs7K0NBRXVCLEFBQ3BCO0FBQ0g7Ozs7aUNBRVMsQUFDTjttQ0FDSSxBQUFDLGtDQUFPLE9BQVI7OEJBQUE7Z0NBQUEsQUFDSTtBQURKO2FBQUEsa0JBQ0ksQUFBQzs7OEJBQUQ7Z0NBRlIsQUFDSSxBQUNJLEFBR1g7QUFIVztBQUFBOzs7OztFQVpFLGdCQUFNLEE7O0FBa0J4QixJQUFNLHFCQUFxQixTQUFyQixBQUFxQixtQkFBQSxBQUFDLFVBQWEsQUFDckM7O0FBRUk7QUFGSixBQUFPLEFBSVY7QUFKVSxBQUNIO0FBRlIsQUFPQTs7a0JBQWUsQUFBVSxrREFBVixBQUFxQixNQUFyQixBQUEyQixvQkFBMUMsQUFBZSxBQUErQyIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMveW9uZ3l1ZWh1YW5nL1dlYnN0b3JtUHJvamVjdHMvcmVhY3QtbmV4dCJ9
