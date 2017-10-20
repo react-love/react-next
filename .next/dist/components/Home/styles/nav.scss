@@ -1,7 +1,0 @@
-;
-
-(function () {
-  "use strict";
-
-  module.exports = ".style_div {\n  width: 100%;\n  background: #fff;\n  padding: 0.25rem 0;\n  overflow: hidden; }\n  .style_div .style_ul {\n    width: 90%;\n    margin: 0 auto;\n    overflow: hidden;\n    padding: 0; }\n  .style_div .style_ul .style_li {\n      width: 33%;\n      float: left;\n      list-style: none;\n      text-align: center;\n      padding-bottom: 0.833rem;\n      padding-top: 0.41667rem; }\n  .style_div .style_ul .style_li .style_img {\n        width: 35%;\n        height: auto;\n        margin: 0 auto;\n        display: block;\n        margin-bottom: 3px; }\n  .style_div .style_ul .style_li .style_span {\n        color: #3c3c3c;\n        font-size: 1.2rem; }\n";
-})();

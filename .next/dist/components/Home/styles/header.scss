@@ -1,7 +1,0 @@
-;
-
-(function () {
-  "use strict";
-
-  module.exports = ".header {\n  position: relative;\n  width: 100%;\n  color: #fff;\n  height: 3.333rem;\n  line-height: 3.333rem;\n  text-align: center;\n  font-size: 1.4rem; }\n  .header .a_link {\n    position: absolute;\n    display: block;\n    top: 0;\n    color: #6c6c6c;\n    right: 1.25rem;\n    width: 3.1667rem;\n    height: 3.333rem; }\n  .header .a_link .a_img {\n      width: 100%;\n      margin-bottom: 3px;\n      vertical-align: middle;\n      outline: none;\n      height: auto; }\n";
-})();
