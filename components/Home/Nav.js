@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Head from 'next/head'
 import * as con from '/utils/const'
-import navStyle from './styles/nav.scss'
+import 'styles/home/nav.scss'
 
 const navImage = {
     [con.NAV_IMAGE_1]: '/static/home/nsyjr.png',
@@ -16,14 +15,13 @@ const navImage = {
     [con.NAV_IMAGE_9]: '/static/home/nother.png'
 }
 const Nav = (props) => {
-    const { title, img, index, handleClick } = props
-    return [
-        <Head key={`NavHead`}><style dangerouslySetInnerHTML={{__html: navStyle}}></style></Head>,
-        <li className="style_li" onClick={handleClick} key={`NavLi`}>
+    const { title, img, index, handleClick, col=4 } = props
+    return (
+        <li className="style_li" onClick={handleClick} key={`NavLi`} style={{width: 100/col + '%'}}>
             <img src={navImage[index+1]} className="style_img" />
             <span className="style_span">{title}</span>
         </li>
-    ]
+    )
 }
 Nav.propTypes = {
     title: PropTypes.string,

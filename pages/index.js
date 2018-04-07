@@ -1,12 +1,13 @@
 import React from 'react'
 import { initStore } from '../redux/store'
 import withRedux from 'next-redux-wrapper'
-import Layout from '../components/Layout'
+import Layout from 'layout/BasicLayout'
 import Home from '../components/Home'
+import Head from 'next/head'
 
 class App extends React.Component {
     componentDidMount () {
-        //this.timer = this.props.startClock()
+
     }
     
     componentWillUnmount () {
@@ -16,6 +17,7 @@ class App extends React.Component {
     render () {
         return (
             <Layout title={`图书商城`}>
+                <Head><link rel="stylesheet" href="/_next/static/style.css" /></Head>
                 <Home />
             </Layout>
         )

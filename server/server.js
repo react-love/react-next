@@ -2,8 +2,9 @@ const express = require('express')
 const next = require('next')
 const compression = require('compression')
 const LRUCache = require('lru-cache')
+const apiArray = require('./api/index')
 
-const port = parseInt(process.env.PORT, 10) || 3000
+const port = parseInt(process.env.PORT, 10) || 3005
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
@@ -17,8 +18,10 @@ const ssrCache = new LRUCache({
 app.prepare()
 .then(() => {
     const server = express()
-    server.use(compression()) //gzip
-    
+    if (!dev) {
+        server.use(compression()) //gzip
+    }
+
     server.get('/', (req, res) => {
         renderAndCache(req, res, '/')
     })
@@ -26,15 +29,20 @@ app.prepare()
     server.get('/search', (req, res) => {
         return app.render(req, res, '/search', req.query)
     })
-    
+
+    apiArray.map(method => {
+        method(server)
+    })
+
+    server.get('*', (req, res) => {
+        res.setHeader('Access-Control-Allow-Origin', '*')
+        return handle(req, res)
+    })
+
     //server.get('/book/:id', (req, res) => {
     //    const queryParams = { id: req.params.id }
     //    renderAndCache(req, res, '/book', queryParams)
     //})
-    
-    server.get('*', (req, res) => {
-        return handle(req, res)
-    })
     
     server.listen(port, (err) => {
         if (err) throw err

@@ -27,7 +27,7 @@ const receiveNav = (response) => ({
 })
 export const getNav = () => async (dispatch, getState) => {
     try {
-        let response = await fetchData.get(`/book/navigation`)
+        let response = await fetchData.get(`/api/nav`)
         await dispatch(receiveNav(response.data))
     } catch (error) {
         console.log('error: ', error)

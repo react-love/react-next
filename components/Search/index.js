@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import Header from './Header'
 import HotSearch from './HotSearch'
+import 'styles/search/index.scss'
 
 class Search extends React.Component {
     constructor(props) {
@@ -27,7 +28,7 @@ class Search extends React.Component {
                 <Header currentHot={currentHot}
                         upDateValue={this.upDateValue}
                 />
-                <div>
+                <div className="search-content">
                     <p className="search-hot-title">
                         <i className="fa fa-fire"></i>
                         <span>热门搜索</span>
@@ -45,22 +46,6 @@ class Search extends React.Component {
                         }
                     </p>
                 </div>
-                <style jsx>{`
-                .style_div_p {
-                      padding: 0.833rem 1.25rem;
-                }
-                 .search-hot-title {
-                      padding: 0.833rem 1.25rem 0 1.25rem;
-                      font-size: 1.2rem;
-                      i {
-                        color: #646464;
-                      }
-                      span {
-                        margin-left: 0.5rem;
-                        color: #646464;
-                      }
-                    }
-                `}</style>
             </div>
         )
     }

@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import Head from 'next/head'
-import headerStyle from './styles/header.scss'
+import 'styles/search/header.scss'
 
 const Header = (props) => {
         const { currentHot } = props
         return (
             <div className="style_body">
-                <Head><style dangerouslySetInnerHTML={{__html: headerStyle}}></style></Head>
                 <div className="style_main">
                     <Link href="/">
                         <a className={`style_a`}><img src={`/static/search/back_search.png`} className="style_a_img" /></a>
