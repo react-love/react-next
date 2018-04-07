@@ -22,22 +22,32 @@
 
 **2、 安装依赖包**
 ```text
-npm install
+npm install && yarn
 ```
 
 **3、运行项目**
-有3个可执行命令，作用都不相同。
+有5个可执行命令，作用都不相同。
 
-在开发环境下，执行：
+#### 1、在开发环境下，执行：
 ```text
 npm run dev
 ```
 
-在生产环境下，执行：
-```text
-npm run build //先打包
+#### 2、在生产环境下，执行：
 
-npm start //最后运行，你也可以增加pm2的配置
+**打包**
+
+```text
+npm run build //这是普通打包
+
+npm run build-analyze //这是带有分析模块的打包
+```
+
+**启动服务**
+```text
+npm start //最后运行
+
+npm run stop //停止服务
 ```
 
 ### 教程

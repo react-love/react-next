@@ -4,8 +4,8 @@
   "description": "next",
   "main": "index.js",
   "scripts": {
-    "dev": "node server/server.js",
-    "build": "next build",
+    "dev": "rm -rf .next && node server/server.js",
+    "build": "rm -rf .next && next build",
     "start": "NODE_ENV=production pm2 start server/server.js",
     "stop": "pm2 stop server/server.js",
     "build-analyze": "BUNDLE_ANALYZE=both yarn build"
@@ -25,7 +25,6 @@
     "@zeit/next-css": "^0.1.5",
     "@zeit/next-sass": "^0.1.2",
     "@zeit/next-source-maps": "^0.0.2",
-    "amfe-flexible": "^2.2.1",
     "autoprefixer": "^7.1.5",
     "axios": "^0.16.2",
     "babel-plugin-module-resolver": "^2.7.1",
